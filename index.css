@@ -1,0 +1,90 @@
+html {
+    background-color: #2e2e2e;
+    color: white;
+    margin: 0;
+}
+nav {
+    background-color: #7400b8;
+    margin: 0;
+    height: 40px;
+}
+body {
+    margin: 0;
+}
+#intro {
+    /*display: inline-block;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 15px;
+    text-align: center;
+    background-color:#2e2e2e ;
+    width: 50%;
+    border-style: solid;
+    border-color:  #F9AB53;
+    border-width: 5px;
+    
+}
+#name {
+    margin: 0;
+    font-size: 2.5em;
+}
+.content-box {
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+}
+#about {
+    border-color:  #0DFDF9 ;
+    background-color:#2e2e2e;
+
+}
+.detail {
+    font-size: 20px;
+}
+#projects-article {
+    border-color: #b5179e;
+
+}
+
+.project {
+    border-style: solid;
+    border-color: #f20089;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 10px;
+}
+.desc {
+    padding:20px;
+    font-size: 30px;
+}
+.skill-required {
+    align-self: normal;
+    padding-left: 20px;
+    font-size: 35px;
+}
+.skill {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    
+}
+#project-content {
+    margin-top: 50px;
+}
+.learn-more {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #F9AB53;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 35px;
+}
+.font-30 {
+    font-size: 30px;
+}
