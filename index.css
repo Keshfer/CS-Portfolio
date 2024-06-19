@@ -30,23 +30,26 @@ body {
     font-size: 2.5em;
 }
 .content-box {
+
     border-style: solid;
     border-width: 5px;
     margin-top: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
+    
 }
 #about {
     border-color:  #0DFDF9 ;
     background-color:#2e2e2e;
-
+    max-width: 700px;
 }
 .detail {
     font-size: 20px;
 }
 #projects-article {
     border-color: #b5179e;
+    max-width: 900px;
 
 }
 
@@ -87,4 +90,7 @@ body {
 }
 .font-30 {
     font-size: 30px;
+}
+@media screen and (min-width: 1000px)  {
+    
 }
