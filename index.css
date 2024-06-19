@@ -87,10 +87,40 @@ body {
     background-color: #2e2e2e;
     color: white;
     font-size: 35px;
+    max-width: 200px;
 }
-.font-30 {
+.learn-more:hover {
+    background-color: #F9AB53;
+
+}
+.font-size {
     font-size: 30px;
 }
+.project-img {
+    height: 400px;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+
+}
 @media screen and (min-width: 1000px)  {
-    
+    .project {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .project-img {
+        height: 200px;
+    }
+    .project-info {
+        display: flex;
+        
+    }
+    .font-size {
+        font-size: 20px;
+    }
+    .learn-more {
+        font-size: 20px;
+    }
 }
