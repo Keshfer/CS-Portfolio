@@ -5,94 +5,100 @@
 
     </head>
     <body>
-        <nav>
+        <nav id="navBar">
             <div id="intro">
                 <h1 id="name">Ken Lin</h1>
                 <p>Computer Science Major from UC Davis</p>
             </div>
+            <div id="nav-options">
+                <button id="resume">Resume</button>
+                <button id="projects">Projects</button>
+            </div>
         </nav>
-        <div  class="content-box" id="about">
-            <h2 id="about-title">
-                About Me
-            </h2>
-            <p class="detail">Hi I'm Ken! I'm a Computer Science major from UC Davis, studying to be a Software Developer.
-                For almost 4 years, I had practice in programming languages such as Java, Python, and C/C++ to name a few.
-                I also have experience in web development though HTML, CSS, and JS along with handling a web server using Express and NodeJs.
-            </p>
-        </div>
-        <article class = "content-box" id="projects-article">
-            <h2>
-                Projects
-            </h2>
-            <p class="font-size">
-                Here are some of the projects I have worked on! These are a combinations of university assignments and personal projects.
-            </p>
-            <section id="project-content">
-                <ul class="project">
+        <article id="content">
+            <div  class="content-box" id="about">
+                <h2 id="about-title">
+                    About Me
+                </h2>
+                <p class="detail">Hi I'm Ken Lin! I'm a Computer Science major from UC Davis, studying to be a Software Developer.
+                    For almost 4 years, I had practice in programming languages such as Java, Python, and C/C++ to name a few.
+                    I also have experience in web development though HTML, CSS, and JS along with handling a web server using Express and NodeJs.
+                </p>
+            </div>
+            <article class = "content-box" id="projects-article">
+                <h2>
+                    Projects
+                </h2>
+                <p class="font-size">
+                    Here are some of the projects I have worked on! These are a combinations of university assignments and personal projects.
+                </p>
+                <section id="project-content">
+                    <ul class="project">
                     
-                    <img class="project-img" src="./img/Aero.png" height="400px">
-                    <section class="project-info">
-                        <h2 class="font-size">Spring 2024</h2>
-                        <h2 class="font-size">ECS 162 - SQLite blog website project using Google OAuth</h2>
-                        <p class ="desc font-size">This is a project from my Web Programming course which I had to make a personal blog website. 
-                            The requirements of this project is to use SQLite to hold the data of users, posts, and comments for the server to fetch from and update to based on user interactions.
-                            However, to interact with this blog, users register using their Google Account which is handled by Google OAuth.
-                        </p>
-                        <div class="skill-required font-size">
-                            <p>Technologies Used</p>
-                            <div class="skill">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>NodeJs</li>
-                                <li>ExpressJs</li>
-                                <li>SQLite</li>
-                                <li>Google OAuth</li>
+                        <img class="project-img" src="./img/Aero.png" height="400px">
+                        <section class="project-info">
+                            <h2 class="font-size">Spring 2024</h2>
+                            <h2 class="font-size">ECS 162 - SQLite blog website project using Google OAuth</h2>
+                            <p class ="desc font-size">This is a project from my Web Programming course which I had to make a personal blog website. 
+                                The requirements of this project is to use SQLite to hold the data of users, posts, and comments for the server to fetch from and update to based on user interactions.
+                                However, to interact with this blog, users register using their Google Account which is handled by Google OAuth.
+                            </p>
+                            <div class="skill-required font-size">
+                                <p>Technologies Used</p>
+                                <div class="skill">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>NodeJs</li>
+                                    <li>ExpressJs</li>
+                                    <li>SQLite</li>
+                                    <li>Google OAuth</li>
+                                </div>
                             </div>
-                        </div>
-                        <button class="learn-more">Learn More</button>
-                    </section>
-                </ul>
-                <ul class="project">
-                    <img class= "project-img" src="./img/game.png" height="400px">
-                    <section class="project-info">
-                        <h2 class="font-size">Winter 2024</h2>
-                        <h2 class="font-size">Dirge - Game made in 8 week Game Jam</h2>
-                        <p class="desc font-size">Dirge is a survival horror demo game made in a 8 week long Game Jam hosted by the Game Development & Arts Club.
-                            The game was made by by a team of 6, including me, in the Unity game engine. It takes place on a spaceship being invaded by alien monsters which you must survive 5 minutes of.
+                            <button class="learn-more" onclick="project1()">Learn More</button>
+                        </section>
+                    </ul>
+                    <ul class="project">
+                        <img class= "project-img" src="./img/game.png" height="400px">
+                        <section class="project-info">
+                            <h2 class="font-size">Winter 2024</h2>
+                            <h2 class="font-size">Dirge - Game made in 8 week Game Jam</h2>
+                            <p class="desc font-size">Dirge is a survival horror demo game made in a 8 week long Game Jam hosted by the Game Development & Arts Club.
+                                The game was made by by a team of 6, including me, in the Unity game engine. It takes place on a spaceship being invaded by alien monsters which you must survive 5 minutes of.
 
-                        </p>
-                        <div class="skill-required font-size">
-                            <p>Technologies Used</p>
-                            <div class="skill">
-                                <li>Unity</li>
-                                <li>C#</li>
+                            </p>
+                            <div class="skill-required font-size">
+                                <p>Technologies Used</p>
+                                <div class="skill">
+                                    <li>Unity</li>
+                                    <li>C#</li>
+                                </div>
                             </div>
-                        </div>
-                        <button class="learn-more">Learn More</button>
-                    </section>
-                </ul>
-                <ul class="project">
-                    <img class="project-img" src="./img/steering.png" height="500px">
-                    <section class="project-info">
-                        <h2 class="font-size">Fall 2023</h2>
-                        <h2 class="font-size">Context based steering for smarter video game AI enemies</h2>
-                        <p class="desc font-size">This project acts as a proof of concept for a type of enemy in a two-dimensional video game.
-                        The idea behind the AI is to have an entity move towards the player character while avoiding obstacles and fellow entities.
-                        Once close enough, the entity circles the player while still avoiding obstacles and entities. 
-                        </p>
-                        <div class="skill-required font-size">
-                            <p>Technologies Used</p>
-                            <div class="skill">
-                                <li>Unity</li>
-                                <li>C#</li>
+                            <button class="learn-more" onclick="project2()">Learn More</button>
+                        </section>
+                    </ul>
+                    <ul class="project">
+                        <img class="project-img" src="./img/steering.png" height="500px">
+                        <section class="project-info">
+                            <h2 class="font-size">Fall 2023</h2>
+                            <h2 class="font-size">Context based steering for smarter video game AI enemies</h2>
+                            <p class="desc font-size">This project acts as a proof of concept for a type of enemy in a two-dimensional video game.
+                            The idea behind the AI is to have an entity move towards the player character while avoiding obstacles and fellow entities.
+                            Once close enough, the entity circles the player while still avoiding obstacles and entities. 
+                            </p>
+                            <div class="skill-required font-size">
+                                <p>Technologies Used</p>
+                                <div class="skill">
+                                    <li>Unity</li>
+                                    <li>C#</li>
                             
+                                </div>
                             </div>
-                        </div>
-                        <button class="learn-more">Learn More</button>
-                    </section>
-                </ul>
-            </section>
+                            <button class="learn-more" onclick="project3()">Learn More</button>
+                        </section>
+                    </ul>
+                </section>
+            </article>
         </article>
     </body>
-    
+    <script src="index.js"></script>
 </html>

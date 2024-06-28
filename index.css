@@ -4,6 +4,8 @@ html {
     margin: 0;
 }
 nav {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #7400b8;
     margin: 0;
     height: 40px;
@@ -13,8 +15,8 @@ body {
 }
 #intro {
     /*display: inline-block;*/
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
     margin-bottom: auto;
     padding: 15px;
     text-align: center;
@@ -102,6 +104,50 @@ body {
 .project-info {
     display: flex;
     flex-direction: column;
+
+}
+#resume {
+    border-style: solid;
+    border-color: #11B4F5 ;
+    background-color: #7400b8;
+    color: white;
+    font-size: 16px;
+}
+#resume:hover {
+    background-color: #11B4F5;
+    color: black;
+}
+#projects {
+    border-style: solid;
+    border-color: #11B4F5 ;
+    background-color: #7400b8;
+    color: white;
+    font-size: 16px;
+}
+#projects:hover {
+    background-color: #11B4F5;
+    color: black;  
+}
+#nav-options {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#resume-pdf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 1000px;
+}
+#download {
+    text-align: center;
+
+}
+#download-link {
+    color: #11B4F5;
+}
+#resume-body {
+    margin-top: 15%;
 
 }
 @media screen and (min-width: 1000px)  {
