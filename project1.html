@@ -1,4 +1,62 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
 <html>
-    
+    <head>
+
+    </head>
+    <body>
+        <nav id="navBar">
+            <div id="intro">
+                <h1 id="name">Ken Lin</h1>
+                <p>Computer Science Major from UC Davis</p>
+            </div>
+            <div id="nav-options">
+                <button id="resume">Resume</button>
+                <button id="projects">Projects</button>
+            </div>
+        </nav>
+        <article>
+            <div class ="content-box" id="project1-title">
+                <h2>ECS 162 - SQLite blog website project using Google OAuth</h2>
+            </div>
+            <div class ="content-box" id="project1-desc">
+                <p>The SQLite blog website is a final project from my ECS 162 Web Programming course. 
+                    The main goal of this project is understand how a website interacts with a with a server, database, and API.
+                    The secondary goal is the stylize the website in our own style. 
+                    For the main goal, I had to learn how to use NodeJs, ExpressJs, and SQLite, which required learning to setup Windows Subsystem for Linux in order to use those softwares.
+                    The secondary goal didn't require as many tools. I used Figma to conveniently create the post and comment boxes that will render with each post and comment made on the blog. CSS was used to for styling everything else. 
+                </p>
+            </div>
+            <hr>
+            <div class="content-box project1-box">
+                <img src="./img/project1 home.png" height="400px">
+                <p>
+                    A big part of the blog is being able to show posts and comments from users. 
+                    This is implemented by using SQLite as the database and ExpressJs as the framework that commands the collection and modification of data in the database.
+                    Each time the post page is refreshed, the server fetches the posts stored in database and displays them in the page.
+                    
+                    For making posts, there is a section to create a post on the left side of the screen. Upon sending a post, the server writes the post's data into the database, and refreshes the page.
+                    This causes the server to fetch the posts list but with the new post included.
+                </p>
+            </div>
+            <div class="content-box project1-box">
+                <p>
+                    To do anything on this blog, one must make an account first. 
+                    Account creation is handled with Google OAuth which a user registers an account with the server using their Google account.
+                    The server collects Google OAuth's response either to prompt the user to register a username or simply sign the user into their existing account based on the data stored in the database.
+                    For a layer of security, I used bcrypt to encrypt the user's google ID to make such sensitive information much more difficult to access in a leak.
+                </p>
+                <img src="./img/project1 diagram.png" height="500px">
+            </div>
+            <div class="content-box project1-box">
+                <img src="./img/emojis.png" height= "500px">
+                <p>
+                    An additional feature of the blog is the ability to add emojis to posts. This is done through the Open Emoji API by fetching the list of emojis 
+                    from the API and displaying the first 200 emojis. I've also included a search bar to filter for the other emojis
+                    the API provides. The search bar refreshes the resulting emojis with each change made to the search term, removing the need to press a button to signal to the blog to start filtering for emojis.
+                </p>
+            </div>
+        </article>
+    </body>
+    <script src="index.js"></script>
 </html>
