@@ -2,13 +2,14 @@ html {
     background-color: #2e2e2e;
     color: white;
     margin: 0;
+    font-size: 20px;
 }
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #7400b8;
+    background-color: #9e0059;
     margin: 0;
-    height: 40px;
+    height: 100px;
 }
 body {
     margin: 0;
@@ -24,6 +25,7 @@ body {
     width: 50%;
     border-style: solid;
     border-color:  #F9AB53;
+    border-radius: 5px;
     border-width: 5px;
     
 }
@@ -31,9 +33,13 @@ body {
     margin: 0;
     font-size: 2.5em;
 }
+#intro > p {
+    font-size: 25px;
+}
 .content-box {
 
     border-style: solid;
+    border-radius: 20px;
     border-width: 5px;
     margin-top: 20%;
     margin-left: auto;
@@ -58,11 +64,13 @@ body {
 .project {
     border-style: solid;
     border-color: #f20089;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     padding-top: 10px;
+    padding-left: 10px;
 }
 .desc {
     padding:20px;
@@ -86,6 +94,7 @@ body {
     margin-bottom: 20px;
     border-style: solid;
     border-color: #F9AB53;
+    border-radius: 8px;
     background-color: #2e2e2e;
     color: white;
     font-size: 35px;
@@ -108,28 +117,36 @@ body {
 }
 #resume {
     border-style: solid;
-    border-color: #11B4F5 ;
-    background-color: #7400b8;
+    border-color: #ff0054;
+    border-width: 5px;
+    border-radius: 8px;
+    background-color: #9e0059;
     color: white;
-    font-size: 16px;
+    font-size: 25px;
+    width: 150px;
+    height: 80px;
 }
 #resume:hover {
-    background-color: #11B4F5;
+    background-color: #ff0054;
     color: black;
 }
 #projects {
     border-style: solid;
-    border-color: #11B4F5 ;
-    background-color: #7400b8;
+    border-color: #ff0054;
+    border-width: 5px;
+    border-radius: 8px;
+    background-color: #9e0059;
     color: white;
-    font-size: 16px;
+    font-size: 25px;
+    width: 150px;
+    height: 80px;
 }
 #projects:hover {
-    background-color: #11B4F5;
+    background-color: #ff0054;
     color: black;  
 }
 #nav-options {
-    margin-top: auto;
+    margin-top: 10px;
     margin-bottom: auto;
 }
 #resume-pdf {
@@ -196,6 +213,68 @@ hr {
 #project2-title {
     max-width: 700px;
     text-align: center;
+    border-color: #153cb4;
+}
+#project2-desc {
+    border-color:  #0DFDF9;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    font-size: 20px;
+}
+.project2-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 5%;
+    border-color: #6930c3;
+    text-align: center;
+    font-size: 20px;
+}
+.project2-box > p {
+    margin: 5%;
+}
+.project2-box > div {
+    display: flex;
+    flex-direction: column;
+    
+}
+.project2-box > div > img {
+    margin-bottom: 10px;
+}
+#project3-title {
+    max-width: 700px;
+    text-align: center;
+    border-color: #f7aef8;
+}
+#project3-desc {
+    margin: 5%;
+    border-color:  #6cffb9;
+}
+.project3-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+    font-size: 20px;
+    line-height: 1.3;
+    border-color: #8093f1;
+}
+#steering-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10%;
+    border-color: #0091ad;
+}
+#steering-videos > h2 {
+    width: 100%;
+    /*font-size: 50px;*/
+}
+#steering-videos > h3 {
+    width: 100%;
 }
 @media screen and (min-width: 1000px)  {
     .project {
@@ -216,10 +295,6 @@ hr {
     .learn-more {
         font-size: 20px;
     }
-
-
-
-
     .project1-box {
         display: flex;
         flex-direction: row;
@@ -228,6 +303,9 @@ hr {
         margin: 5%;
         border-color:#F9AB53
     
+    }
+    .project2-box {
+        flex-direction: row;
     }
  
 }
