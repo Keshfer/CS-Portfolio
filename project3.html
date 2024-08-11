@@ -20,10 +20,11 @@
         </div>
         <div class="content-box" id="project3-desc">
             <p>
-                This project in AI navigation stemmed from a need for a smarter enemy in a video game project, one that can avoid obstacles and its allies as they approach the player.
-                Context-Based Steering satisfies this requirement. 
-                The basic idea behind Context-Based Steering is the AI has objects it wants to move away from and objects it wants to move towards to. 
+                This project on AI navigation stemmed from a need for a smarter enemy in a video game project, one that can avoid obstacles and its allies as they approach the player. 
+                Context-Based Steering satisfies this requirement.
+                The basic idea behind Context-Based Steering is that AI has objects it wants to move away from and objects it wants to move toward. 
                 By evaluating the position and distance of these objects, the AI can determine the best direction to go in. 
+
             </p>
         </div>
        <hr>
@@ -40,14 +41,14 @@
         </div>
         <div class="content-box project3-box">
             <p>
-                The implementation of Context-Based Steering involves vectors, and weights. With vectors there are two types: interest vectors(green lines) and avoid vectors(blue lines).
-                The length of these lines represent the weights of that direction which are how strongly the AI likes or dislike that direction, the longer the length is, the more significant the weight is.
-                In order for the AI to make smart navigation decisions, it must consider other possible directions, not just the most direct one. Thus, there are multiple vectors fanning out from the main vector at an angle, less weight than the most direct direction but still considered.
-                In the event there are multiple objects of interest or deterrance, the AI will apply the fan of vectors concept to each object and then sum up each vector direction, creating a net interest vector and a net avoidance vector.
+                The implementation of Context-Based Steering involves directions, and weights. With directions there are two types: interest and avoid.
+                The length of these lines represent the weight of that direction which is how strongly the AI likes or dislikes that direction.
+                In order for the AI to make smart navigation decisions, it must consider other possible directions. Thus, multiple directions fan out from the main vector at an angle, less weight than the most direct direction but still considered.
+                If there are multiple objects of interest or deterrance, the AI will apply the fan of directions concept to each object and then sum up each direction, creating net interest directions(green lines) and net avoidance directions(blue lines).
                 <br>
-                With the net interest and avoidance vectors, the AI can now make a decision on a direction to travel in. The AI first sums the interest and avoidance vectors together to make a set of resultant vectors(white lines).
-                These vectors represent the directions the AI wants to go even after taking deterrant objects into account. To finally make a decision, the AI sums up resultant vectors together and this produces a direction(yellow line) it will go in.
-
+                With the net interest and avoidance directions, the AI can now make a decision on a direction to travel in. The AI first sums the net interest and net avoidance together to make a set of resultant directions(white lines).
+                They represent directions which the interest outweighs the avoidance. The AI sums up resultant vectors together and this produces a direction(yellow line) it will go in.
+                This process is what defines the AI's follow behavior.
 
             </p>
             <img src="./img/vectors.png" width="400px">
@@ -55,9 +56,9 @@
         <div class="content-box project3-box">
             <img src="./img/circling.png" width="400px">
             <p>
-                I extended this implementation to include a circling behavior for the AI. This is so the AI can keep the player at a distance while still being able to harm the player with projectiles. The first step of the circling behavior is simply the implementation described previously, calculating the vectors and weight to decide on a direction.
-                However, instead of acting on the direction, the AI will angle the direction 90 degrees and treats it as the new main interest vector. The process of calculating interest and avoidance vectors repeats again with the new vector to find the final direction the AI will act upon. 
-                The colored lines in the picture provided still represents the same type of vectors as previously mentioned. You may notice there are two yellow lines instead one in the picture. One line is directed at the direction the AI originally wants to go to approach its object of interest and the other line is directed at the direction the AI wants to go to perform the circling behavior.
+                I extended this implementation to include a circling behavior for the AI. This is so the AI can keep the player at a distance while still being able to harm the player with projectiles. The first step of the circling behavior is simply the implementation described previously, calculating the directions and weights to decide on a direction.
+                However, instead of acting on the final direction, the AI will angle the direction 90 degrees and treats it as the new main interest direction. The process of calculating interest and avoidance vectors repeats to find the final direction, using the new interest direction. 
+                The colored lines in the picture provided still represents the same type of vectors as previously mentioned.
             </p>
             
         </div>
