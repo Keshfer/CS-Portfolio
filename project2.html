@@ -31,17 +31,21 @@
             <p>This is the game map that the player must survive on for the given time limit. 
                 Since we decided on a top-down two-dimensional game, we also decided on a pixel-based art style that takes advantage of Unity's tile system. 
                 A team member created the map's tiles, and I thought of the design. 
-                The mentality behind the design is to give the player enough space to run away from threats while having rooms be small enough to force the players and threats to be in close proximity. 
+                The intent behind the design is to give the player enough space to run away from threats while having rooms be small enough to force the players and threats to be in close proximity to each other. 
                 This results in opportunities for threats to surprise the player from the careless player's blindspots.
     
             </p>
         </div>
         <div class="content-box project2-box">
-            <p>The most important game mechanic for this project is the vision system since it is the mechanic that creates the environment of partial information and need for awareness.
-                This is done by using and editing Unity's 2D lighting system. To do this, I created two different shaders. The first shader filters out the colors from the environment , creating a greyed-out and tangible, but undetailed, environment the player can navigate without their vision cone.
-                The second shader is for hostile entities which require the vision cone to be overlapping in order to be seen on screen. Together, the two shaders allows the player to know how much space they have to move around while also encouraging them to move their vision cone around to ensure the space is safe.
-                To complete the effect the two shaders have created, I also included shadows for the walls and doors. The shadows prevent the player's vision cone from seeing through the wall, creating the need to have direct line of sight in order to determine if a threat is there.
-                The results can be seen in the 3 pictures shown.
+            <p>The most important game mechanic for this project is the vision system, since it is the mechanic that creates the environment of partial information and need for awareness. 
+                This is done by using and editing Unity's 2D lighting system. 
+                To do this, I created two different filters. 
+                The first filters out the colors from the environment, creating a gray and tangible, but undetailed, environment the player can navigate without their vision cone. 
+                The second filter is for hostile entities, which requires the vision cone to be overlapping in order to be seen on screen. 
+                Together, the two filters allow the player to be aware of what their general surroundings look like while also encouraging them to move their vision cone around to verify their space is safe. 
+                To complete the effect the two filters have created, I also included shadows for the walls and doors. 
+                The shadows prevent the player's vision cone from seeing through the wall, creating the need to have a direct line of sight to check an unknown space. 
+                The results are demonstrated in the 3 pictures shown.
             </p>
             <div>
                 <img src="./img/no sight.png" height="300px">
@@ -56,8 +60,11 @@
                 <img src="./img/door broken.png" width="450px">
             </div>
             <p>
-                Doors is another element I made for the player to interact with to escape their assailants and section off areas. Enemies however are able to break down doors so players are only safe temporarily. 
-                The yellow squares on the right side of the doors are switched to open and close the door. When broken, as indicated by the metal door on the floor, the player can repair the it by standing on the switch tiles and holding the "E" key.
+                Doors are an element I made for the player to interact with to escape their assailants and section off areas.
+                Enemies, however, are able to break down doors, so players are only safe temporarily. 
+                The yellow squares on the right side of the doors are switches to open and close the door. 
+                When broken, as indicated by the metal door on the floor, the player can repair it by standing on the switch tiles and holding the "E" key.
+
                  
             </p>
         </div>
